@@ -1,0 +1,12 @@
+.about{
+  display: flex;
+  
+}
+.about-container {
+  width: 100%;
+  padding: 2%;
+  background-color:black;
+  margin:0 auto;
+  padding:3%;
+  
+}
