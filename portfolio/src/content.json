@@ -4,22 +4,29 @@
         "description": "I’m a third-year Computer Science student currently exploring different domains in tech.I’ve been learning web development, app development using Flutter, and working on AI and data-related projects with Python.I enjoy building projects that help me understand real-world applications, and I’m always open to trying new technologies and improving my skills."
     },
     "projects":{
-        "project1":{
+        "1":{
             "title":"College Hub",
             "description":"College Hub is a full-stack academic management platform featuring secure authentication (with JWT and role-based access), real-time chat forums, and comprehensive systems for task assignment, student profiles, attendance, timetables, performance tracking, and digital notes. It streamlines operations for students, faculty, and administrators through an intuitive, centralized interface.",
             "tech":"Technologies used: React, Node.js, Express.js, MongoDB, JWT",
             "githubLink":"https://github.com/Aaje192/FullStack-Project-_-College-Hub"
         },
-        "project2":{
+        "2":{
             "title":"Chain Reaction",
             "description":"Chain Reaction is a multiplayer online game where players strategically place bombs to eliminate opponents and avoid being eliminated themselves. The game features real-time multiplayer functionality, allowing players to compete against each other in a dynamic and engaging environment.",
             "tech":"Technologies used: React, Node.js, Express.js, Socket.io",
             "githubLink":"https://github.com/Lokesh-1511/chain-reaction"
         },
-        "project3":{
+        "3":{
             "title":"Legal Document Simplifier",
             "description":"This portfolio website showcases my skills, projects, and experiences in a clean and modern design. It serves as a personal branding tool to highlight my work and connect with potential employers or collaborators.",
-            "tech":"Technologies used: React, CSS"
+            "tech":"Technologies used: React, CSS",
+            "githubLink":"https://github.com/Lokesh-1511/legal-doc-simplifier"
+        },
+        "4":{
+            "title":"Smart Park",
+            "description":"A cross-platform mobile app built with Flutter that enables users to find, book, and pay for parking spots in real-time. The app uses a custom-trained AI model with HSV-based image recognition to detect vacant and occupied parking slots from camera feeds.",
+            "tech":"Technologies used: Flutter,Aws, Python",
+            "githubLink":""
+        }
     }
-}
 }
