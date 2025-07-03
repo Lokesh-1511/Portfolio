@@ -3,7 +3,7 @@ import content from '../../content.json'
 import './About.css'
 function About() {
   return (
-    <div className="about-container">
+    <div id="about" className="about-container">
       <h2 id="title">{content.about.title}</h2>
       <p className="about">{content.about.description}</p>
 

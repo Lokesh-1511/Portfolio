@@ -4,6 +4,7 @@ import Header from './components/Header/Header.jsx'
 import About from './components/About/About.jsx'
 import Navbar from './components/Navbar/Navbar.jsx'
 import Projects from './components/Projects/Projects.jsx'
+import Skills from './components/Skills/Skills.jsx'
 function App() {
   return (
     <div className="App">
@@ -11,6 +12,7 @@ function App() {
       <Header/>
       <About/>
       <Projects/>
+      <Skills/>
     </div>
   )
 }

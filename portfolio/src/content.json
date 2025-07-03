@@ -12,14 +12,14 @@
         },
         "2":{
             "title":"Chain Reaction",
-            "description":"Chain Reaction is a multiplayer online game where players strategically place bombs to eliminate opponents and avoid being eliminated themselves. The game features real-time multiplayer functionality, allowing players to compete against each other in a dynamic and engaging environment.",
+            "description":"Chain Reaction is a real-time multiplayer strategy game where players place orbs to trigger chain reactions and capture cells. The game features live online matches, built using React and Socket.io for smooth, interactive gameplay.",
             "tech":"Technologies used: React, Node.js, Express.js, Socket.io",
             "githubLink":"https://github.com/Lokesh-1511/chain-reaction"
         },
         "3":{
             "title":"Legal Document Simplifier",
             "description":"This portfolio website showcases my skills, projects, and experiences in a clean and modern design. It serves as a personal branding tool to highlight my work and connect with potential employers or collaborators.",
-            "tech":"Technologies used: React, CSS",
+            "tech":"Technologies used: Python",
             "githubLink":"https://github.com/Lokesh-1511/legal-doc-simplifier"
         },
         "4":{

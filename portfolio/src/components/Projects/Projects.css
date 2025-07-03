@@ -1,16 +1,14 @@
-/* Projects.css */
-
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   padding: 2rem;
 }
-h2{
+.protitle {
     color:black;
     margin:0 auto;
     text-align:center;
-}
+} 
 .project-card {
   background:whitesmoke;
   border-radius: 12px;
@@ -54,4 +52,8 @@ h2{
 
 .card-content a:hover {
   text-decoration: underline;
+}
+.details{
+  margin:0 auto;
+  padding:3%;
 }
