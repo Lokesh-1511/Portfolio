@@ -1,0 +1,42 @@
+.education-container {
+  margin: 0 auto;
+  padding: 3%;
+  max-width: 800px;
+}
+
+#title {
+  margin-bottom: 2rem;
+}
+
+.education {
+  text-align: left;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  
+  background-color: #f8f9fa;
+}
+
+.education h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.education-container > p {
+  text-align: left;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+}
+
+.education-container > p h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.education-container > p p {
+  margin: 0.25rem 0;
+  color: #666;
+}
