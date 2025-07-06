@@ -2,7 +2,7 @@ import React from 'react'
 import './Header.css'
 function Header() {
   return (
-    <div className="header">
+    <div id="home" className="header">
       <h1 className="name">Lokesh R N</h1>
     </div>
   )
