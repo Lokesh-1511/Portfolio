@@ -104,3 +104,6 @@ button:focus-visible {
     color: #213547;
   }
 }
+p{
+  font-size:1.2rem;
+}
