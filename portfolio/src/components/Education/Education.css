@@ -1,11 +1,24 @@
 .education-container {
-  margin: 0 auto;
+  margin-left: 0;
   padding: 3%;
-  max-width: 800px;
+  max-width: 1200px;
 }
 
 #title {
   margin-bottom: 2rem;
+}
+
+.education-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .education-content {
+    flex-direction: row;
+    gap: 2rem;
+  }
 }
 
 .education {
@@ -13,30 +26,26 @@
   margin-bottom: 2rem;
   padding: 1.5rem;
   background-color: #f8f9fa;
+  border-radius: 10px;
+  flex: 1;
+  color: #333;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
 .education h3 {
   margin-top: 0;
   margin-bottom: 1rem;
-  color: #333;
+  color: #333 !important;
 }
 
-.education-container > p {
-  text-align: left;
-  margin-bottom: 1.5rem;
-  padding: 1rem;
-  background-color: #f8f9fa;
-  border-radius: 5px;
-
-}
-
-.education-container > p h3 {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-  color: #333;
-}
-
-.education-container > p p {
+.education p {
   margin: 0.25rem 0;
-  color: #666;
+  color: #666 !important;
 }
+
