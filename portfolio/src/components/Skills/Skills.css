@@ -1,14 +1,51 @@
 .skills-section {
-  padding: 2rem;
+  padding: 3%;
   text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Mobile responsive skills */
+@media (max-width: 768px) {
+  .skills-section {
+    padding: 5% 4%;
+    margin: 0;
+  }
+}
+
+.skills-title {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .skills-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-title {
+    font-size: 1.8rem;
+  }
 }
 
 .skills-note,
 .skills-description {
   font-size: 1.2rem;
-  color:azure;
+  color: azure;
   max-width: 600px;
   margin: 0 auto 1rem;
+}
+
+@media (max-width: 768px) {
+  .skills-note,
+  .skills-description {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
 }
 
 .skills-grid {
@@ -17,6 +54,18 @@
   justify-content: center;
   gap: 1.5rem;
   margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-grid {
+    gap: 0.8rem;
+  }
 }
 
 .skill-card {

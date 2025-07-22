@@ -1,15 +1,37 @@
 .contact-container {
   margin-left: 0;
   padding: 3%;
-  max-width: 100%;
+  max-width: 1200px;
+}
+
+/* Mobile responsive contact */
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 5% 4%;
+    margin: 0;
+    max-width: 100%;
+  }
 }
 
 .contact-title {
   font-size: 2.5rem;
   font-weight: 700;
-  color:white;
+  color: white;
   margin-bottom: 1rem;
   position: relative;
+}
+
+@media (max-width: 768px) {
+  .contact-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-title {
+    font-size: 1.8rem;
+  }
 }
 
 .contact-title::after {
@@ -22,11 +44,28 @@
   background: linear-gradient(45deg, #3498db, #2980b9);
   border-radius: 2px;
 }
+
+@media (max-width: 768px) {
+  .contact-title::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
 .contact-info-title {
   font-size: 1.5rem;
-  color:white;
+  color: white;
   margin-bottom: 2rem;
 }
+
+@media (max-width: 768px) {
+  .contact-info-title {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+}
+
 .contact-description {
   font-size: 1.1rem;
   color: white;
@@ -35,10 +74,25 @@
   max-width: 600px;
 }
 
+@media (max-width: 768px) {
+  .contact-description {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    max-width: 100%;
+  }
+}
+
 .contact-content {
   display: flex;
   flex-direction: column;
   gap: 3rem;
+}
+
+@media (max-width: 768px) {
+  .contact-content {
+    gap: 2rem;
+  }
 }
 
 @media (min-width: 768px) {

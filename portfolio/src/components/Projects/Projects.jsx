@@ -17,7 +17,9 @@ import './Projects.css';
 
 function Projects() {
   return (
-    <div id="projects"><div className="details"><h2 className="heading">Projects</h2>
+    <div id="projects" className="projects-container">
+      <div className="details">
+        <h2 className="protitle">Projects</h2>
     <p className="description">Below are some of the projects I’ve developed across web, mobile, and AI domains. Each one is functional with key features in place, and I continue to enhance and refine them as I grow in my learning journey.</p>
     </div>
     <div className="projects-grid">

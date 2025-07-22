@@ -1,11 +1,43 @@
-.header{
-    padding:2%;
-    height:30vh;
-    width:100%;
+.header {
+    padding: 2%;
+    height: 30vh;
+    width: 100%;
     background-color: #242424;
-    color:white;
+    color: white;
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
+}
+
+.name {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Mobile responsive header */
+@media (max-width: 768px) {
+    .header {
+        height: 25vh;
+        padding: 5% 4%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .name {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        height: 20vh;
+        padding: 4% 3%;
+    }
+    
+    .name {
+        font-size: 1.8rem;
+    }
 }
 

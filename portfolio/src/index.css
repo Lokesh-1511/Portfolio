@@ -7,25 +7,48 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 60px; /* space reserved for fixed navbar */
+  font-size: 16px; /* Base font size */
 }
-:root {
+
+/* Mobile responsive font size */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+    scroll-padding-top: 70px; /* More space for mobile navbar */
+  }
+}
+
+body {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  /* Theme colors */
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-
-  /* Font and rendering settings */
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Mobile responsive body */
+@media (max-width: 768px) {
+  body {
+    font-size: 1rem;
+  }
+}
+
+/* ========== CSS Variables ========== */
+:root {
+  --background-color: #242424;
+  --text-color: rgba(255, 255, 255, 0.87);
+  --container-padding: 3%;
+  --mobile-padding: 5%;
 }
 
 /* ========== Body Styles ========== */
@@ -34,8 +57,8 @@ body {
   min-width: 320px;
   min-height: 100vh;
   font-family: inherit;
-  background-color: var(--background-color, #242424);
-  color: var(--text-color, rgba(255, 255, 255, 0.87));
+  background-color: var(--background-color);
+  color: var(--text-color);
   scroll-behavior: smooth;
 }
 
