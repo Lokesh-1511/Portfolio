@@ -18,6 +18,13 @@
   color: white;
 }
 
+/* Desktop styles */
+@media (min-width: 769px) {
+  #title {
+    text-align: left;
+  }
+}
+
 @media (max-width: 768px) {
   #title {
     font-size: 2rem;

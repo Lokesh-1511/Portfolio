@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import content from '../../content.json';
 import './Projects.css';
 // // Import images
@@ -39,15 +39,36 @@ function Projects() {
 }
 
 function ProjectCard({ title, image, description, tech, githubLink }) {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsExpanded(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsExpanded(false);
+  };
+
+  const handleTouch = () => {
+    setIsExpanded(!isExpanded);
+  };
+
   return (
-    <section className="project-card">
-      <h2 className="project-card-title">{title}</h2>
+    <section 
+      className={`project-card ${isExpanded ? 'expanded' : ''}`} 
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      onTouchStart={handleTouch}
+    >
+      <div className="card-header">
+        <h2 className="project-card-title">{title}</h2>
+      </div>
       {/* <img src={image} alt={`${title} preview`} /> */}
-      <section className="card-content">
+      <section className={`card-content ${isExpanded ? 'show' : ''}`}>
         <p>{description}</p>
         <p><strong>{tech}</strong></p>
         {githubLink && (
-          <a href={githubLink} target="_blank" rel="noopener noreferrer">
+          <a href={githubLink} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>
             GitHub
           </a>
         )}

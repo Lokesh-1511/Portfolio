@@ -18,7 +18,7 @@
         },
         "3":{
             "title":"Legal Document Simplifier",
-            "description":"This portfolio website showcases my skills, projects, and experiences in a clean and modern design. It serves as a personal branding tool to highlight my work and connect with potential employers or collaborators.",
+            "description":"An AI-powered web application that simplifies complex legal documents and answers user queries through an interactive chatbot. Users can upload PDFs to receive quick summaries or detailed explanations in plain language. Built with Python, Gradio, PyMuPDF, and LLaMA 3 (via Groq API), it ensures accurate, user-friendly legal understanding.",
             "tech":"Technologies used: Python",
             "githubLink":"https://github.com/Lokesh-1511/legal-doc-simplifier"
         },

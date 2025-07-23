@@ -21,6 +21,13 @@
   position: relative;
 }
 
+/* Desktop styles */
+@media (min-width: 769px) {
+  .contact-title {
+    text-align: left;
+  }
+}
+
 @media (max-width: 768px) {
   .contact-title {
     font-size: 2rem;
