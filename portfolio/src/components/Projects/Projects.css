@@ -38,6 +38,13 @@
     margin-bottom: 2rem;
 }
 
+.project-card-title {
+    color: black;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
 /* Mobile responsive title */
 @media (max-width: 768px) {
   .protitle {

@@ -41,7 +41,7 @@ function Projects() {
 function ProjectCard({ title, image, description, tech, githubLink }) {
   return (
     <section className="project-card">
-      <h2 className="protitle">{title}</h2>
+      <h2 className="project-card-title">{title}</h2>
       {/* <img src={image} alt={`${title} preview`} /> */}
       <section className="card-content">
         <p>{description}</p>
