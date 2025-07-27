@@ -4,7 +4,7 @@
     height: 30vh;
     width: 100%;
     background-color: #0f172a;
-    color: white;
+    color: var(--text-color);
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
@@ -14,6 +14,7 @@
     font-size: 3rem;
     font-weight: 700;
     margin: 0;
+    color: #fff;
 }
 
 /* Mobile responsive header */

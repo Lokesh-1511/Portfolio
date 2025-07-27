@@ -69,11 +69,39 @@ body::before {
 }
 
 /* ========== CSS Variables ========== */
+
 :root {
   --background-color: linear-gradient(135deg, #0f172a, #1e293b, #334155);
   --text-color: rgba(255, 255, 255, 0.92);
+  --heading-color: #fff;
+  --container-bg: rgba(0,0,0,0.4);
+  --card-bg: rgba(0,0,0,0.4);
+  --accent: #6366f1;
   --container-padding: 3%;
   --mobile-padding: 5%;
+}
+[data-theme="light"] {
+  --background-color: linear-gradient(135deg, #f8fafc, #e0e7ef, #cbd5e1);
+  --text-color: #1e293b;
+  --heading-color: #1e293b;
+  --container-bg: rgba(255,255,255,0.92);
+  --card-bg: rgba(255,255,255,0.92);
+  --accent: #6366f1;
+}
+
+[data-theme="light"] {
+  --background-color: linear-gradient(135deg, #f8fafc, #e0e7ef, #cbd5e1);
+  --text-color: #1e293b;
+  --container-bg: rgba(255,255,255,0.92);
+  --card-bg: rgba(255,255,255,0.92);
+  --accent: #6366f1;
+}
+[data-theme="dark"] {
+  --background-color: linear-gradient(135deg, #0f172a, #1e293b, #334155);
+  --text-color: rgba(255, 255, 255, 0.92);
+  --container-bg: rgba(0,0,0,0.4);
+  --card-bg: rgba(0,0,0,0.4);
+  --accent: #6366f1;
 }
 
 /* ========== Body Styles ========== */
@@ -113,23 +141,23 @@ a:hover {
 
 /* ========== Buttons ========== */
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  color: white;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
 
-button:hover {
-  border-color: #646cff;
+body {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--text-color);
+  background: var(--background-color);
+  background-attachment: fixed;
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  position: relative;
 }
-
 /* ========== Modern Background Effects ========== */
 
 /* Floating particles effect */

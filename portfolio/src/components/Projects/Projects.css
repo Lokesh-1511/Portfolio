@@ -62,7 +62,7 @@
   .project-card-title {
     margin: 0;
     font-size: 1rem;
-    color: #ffffff;
+  color: var(--heading-color);
     text-align: center;
     transition: all 0.3s ease;
   }
@@ -86,6 +86,7 @@
     padding: 0 0.5rem;
     opacity: 0;
     color: #e2e8f0;
+    color: var(--text-color);
   }
 
   .card-content.show {
@@ -137,7 +138,7 @@
     font-size: 2.5rem;
     margin-bottom: 2rem;
 }
-
+  color: var(--heading-color);
 /* Desktop styles for main title */
 @media (min-width: 769px) {
   .protitle {
@@ -235,18 +236,18 @@
 .card-content h2 {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
-  color: #ffffff;
+  color: var(--text-color);
 }
 
 .card-content p {
   font-size: 0.95rem;
-  color: #e2e8f0 !important;
+  color: var(--text-color) !important;
   margin-bottom: 0.5rem;
   line-height: 1.5;
 }
 
 .card-content strong {
-  color: #ffffff !important;
+  color: var(--text-color) !important;
 }
 
 .card-content a {
