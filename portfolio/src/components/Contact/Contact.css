@@ -115,7 +115,7 @@
 
 .contact-info h3 {
   font-size: 1.5rem;
-  color: white;
+  color: var(--heading-color);
   margin-bottom: 2rem;
 }
 
@@ -201,8 +201,7 @@
 
 .contact-form h3 {
   font-size: 1.5rem;
-  color: #ffffff;
-  color: var(--text-color);
+  color: var(--heading-color);
   margin-bottom: 2rem;
 }
 
@@ -258,7 +257,6 @@
 
 .submit-btn {
   background: linear-gradient(45deg, #6366f1, #8b5cf6);
-  color: white;
   color: var(--text-color);
   border: none;
   padding: 14px 30px;
