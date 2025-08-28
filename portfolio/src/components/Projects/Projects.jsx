@@ -31,6 +31,7 @@ function Projects() {
           description={project.description}
           tech={project.tech}
           githubLink={project.githubLink}
+          liveLink={project.liveLink}
         />
       ))}
     </div>
@@ -38,7 +39,7 @@ function Projects() {
   );
 }
 
-function ProjectCard({ title, image, description, tech, githubLink }) {
+function ProjectCard({ title, image, description, tech, githubLink, liveLink }) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const handleMouseEnter = () => {
@@ -67,11 +68,18 @@ function ProjectCard({ title, image, description, tech, githubLink }) {
       <section className={`card-content ${isExpanded ? 'show' : ''}`}>
         <p>{description}</p>
         <p><strong>{tech}</strong></p>
-        {githubLink && (
-          <a href={githubLink} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>
-            GitHub
-          </a>
-        )}
+        <div style={{ display: 'flex', gap: '1rem', marginTop: '1rem' }}>
+          {githubLink && (
+            <a href={githubLink} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>
+              GitHub
+            </a>
+          )}
+          {liveLink && (
+            <a href={liveLink} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>
+              Live Demo
+            </a>
+          )}
+        </div>
       </section>
     </section>
   );

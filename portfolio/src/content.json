@@ -14,7 +14,8 @@
             "title":"Chain Reaction",
             "description":"Chain Reaction is a real-time multiplayer strategy game where players place orbs to trigger chain reactions and capture cells. The game features live online matches, built using React and Socket.io for smooth, interactive gameplay.",
             "tech":"Technologies used: React, Node.js, Express.js, Socket.io",
-            "githubLink":"https://github.com/Lokesh-1511/chain-reaction"
+            "githubLink":"https://github.com/Lokesh-1511/chain-reaction",
+            "liveLink":"https://chain-reaction-8bb4b.web.app/"
         },
         "3":{
             "title":"Legal Document Simplifier",
