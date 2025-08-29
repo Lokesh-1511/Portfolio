@@ -62,7 +62,7 @@
   .project-card-title {
     margin: 0;
     font-size: 1rem;
-  color: var(--heading-color);
+    color: #ffffff !important;
     text-align: center;
     transition: all 0.3s ease;
   }
