@@ -7,7 +7,7 @@ import Navbar from './components/Navbar/Navbar.jsx';
 import Projects from './components/Projects/Projects.jsx';
 import Skills from './components/Skills/Skills.jsx';
 import Education from './components/Education/Education.jsx';
-import Contact from './components/Contact/Contact.jsx';
+// import Contact from './components/Contact/Contact.jsx';
 import { ThemeProvider } from './ThemeContext';
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
         <Projects/>
         <Skills/>
         <Education/>
-        <Contact/>
+        {/* <Contact/> */}
       </div>
     </ThemeProvider>
   );

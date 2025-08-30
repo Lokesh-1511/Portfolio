@@ -5,8 +5,43 @@
     position:fixed;
     z-index: 9999;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
+}
+
+/* Social Media Buttons - Left Side */
+.social-media-buttons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.social-media-buttons a {
+    color: var(--text-color, white);
+    transition: all 0.3s ease;
+    padding: 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media-buttons a:hover {
+    color: #6366f1;
+    background-color: rgba(99, 102, 241, 0.1);
+    transform: translateY(-2px);
+}
+
+.social-media-buttons svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Right side content wrapper */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }    
 
 .hamburger {
@@ -52,8 +87,29 @@
 
 /* Mobile Styles */
 @media screen and (max-width: 768px) {
+    .navbar {
+        justify-content: space-between;
+    }
+    
+    /* Show social media buttons on mobile but with smaller size */
+    .social-media-buttons {
+        display: flex;
+        gap: 0.5rem;
+        order: 2; /* Move to right side */
+    }
+    
+    .social-media-buttons svg {
+        width: 18px;
+        height: 18px;
+    }
+    
+    .social-media-buttons a {
+        padding: 0.3rem;
+    }
+    
     .hamburger {
         display: flex;
+        order: 1; /* Keep hamburger on left */
     }
 
     .nav-menu {
@@ -102,5 +158,26 @@
 
     .hamburger.active span:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+/* Extra small screens - smaller icons but keep most visible */
+@media screen and (max-width: 480px) {
+    .social-media-buttons {
+        gap: 0.3rem;
+    }
+    
+    .social-media-buttons svg {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .social-media-buttons a {
+        padding: 0.25rem;
+    }
+    
+    /* Only hide LeetCode on very small screens if needed */
+    .social-media-buttons a:nth-child(6) { /* LeetCode */
+        display: none;
     }
 }
