@@ -36,7 +36,7 @@
 .skills-note,
 .skills-description {
   font-size: 1.2rem;
-  color: azure;
+  color: var(--text-color);
   max-width: 600px;
   margin: 0 auto 1rem;
 }
@@ -45,7 +45,7 @@
   .skills-note,
   .skills-description {
     font-size: 1rem;
-  color: var(--heading-color);
+    color: var(--text-color);
   }
 }
 
